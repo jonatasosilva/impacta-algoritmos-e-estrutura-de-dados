@@ -56,7 +56,7 @@ public class NoRef {
 
     private No obtemPenultimoItem() {
         No item = this.inicio;
-        while (item.proximo.proximo != null) {
+        while (item.proximo != this.fim) {
             item = item.proximo;
         }
         return item;
