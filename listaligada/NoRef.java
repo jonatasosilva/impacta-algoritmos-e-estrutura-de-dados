@@ -88,6 +88,28 @@ public class NoRef {
     	return null;
     }
 
+    public void insereItemDepoisDoValor(int valorNovoItem, int valorItemDesejado) {
+    	No novoItem = new No(valorNovoItem);
+    	No itemDesejado = this.localizaItemPorValor(valorItemDesejado);
+    	No aux = itemDesejado.proximo;
+    	
+    	itemDesejado.proximo = novoItem;
+    	novoItem.proximo = aux;
+    }
+    
+    public void insereItemAntesDoValor(int valorNovoItem, int valorItemDesejado) {
+    	No novoItem = new No(valorNovoItem);
+    	No itemDesejado = this.localizaItemPorValor(valorItemDesejado);
+    	No aux = itemDesejado.proximo;
+    	
+    	itemDesejado.proximo = novoItem;
+    	novoItem.proximo = aux;
+    	
+    	int auxValor = itemDesejado.info;
+    	itemDesejado.info = novoItem.info;
+    	novoItem.info = auxValor;
+    }
+
     public void imprime() {
         No aux = this.inicio;
         while (aux != null) {
