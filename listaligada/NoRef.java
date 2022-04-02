@@ -77,6 +77,17 @@ public class NoRef {
         }
     }
 
+    private No localizaItemPorValor(int valor) {
+    	No aux = this.inicio;
+    	while (aux != null) {
+    		if (aux.info == valor) {
+    			return aux;
+    		}
+    		aux = aux.proximo;
+    	}
+    	return null;
+    }
+
     public void imprime() {
         No aux = this.inicio;
         while (aux != null) {
