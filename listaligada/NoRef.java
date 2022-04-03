@@ -110,6 +110,19 @@ public class NoRef {
     	novoItem.info = auxValor;
     }
 
+    private boolean itemEstaNoMeio(No item) {
+        return item != null && this.inicio != item && this.fim != item;
+    }
+
+    public void removeMeio(int info) {
+        No item = localizaItemPorValor(info);
+        if (itemEstaNoMeio(item)) {
+            No proximoItem = item.proximo;
+            item.info = proximoItem.info;
+            item.proximo = proximoItem.proximo;
+        }
+    }
+
     public void imprime() {
         No aux = this.inicio;
         while (aux != null) {
