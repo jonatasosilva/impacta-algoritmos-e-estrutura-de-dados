@@ -90,10 +90,10 @@ public class NoRef {
 
     public void insereMeio(int infoNovoItem, int infoItemEspecifico) {
     	No novoItem = new No(infoNovoItem);
-    	No infoItemEspecifico = this.localizaItemPorInfo(infoItemEspecifico);
-    	No aux = infoItemEspecifico.proximo;
+    	No itemEspecifico = this.localizaItemPorInfo(infoItemEspecifico);
+    	No aux = itemEspecifico.proximo;
     	
-    	infoItemEspecifico.proximo = novoItem;
+    	itemEspecifico.proximo = novoItem;
     	novoItem.proximo = aux;
     }
 
