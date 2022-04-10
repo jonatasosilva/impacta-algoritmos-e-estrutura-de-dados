@@ -96,19 +96,6 @@ public class NoRef {
     	itemDesejado.proximo = novoItem;
     	novoItem.proximo = aux;
     }
-    
-    public void insereItemAntesDoValor(int valorNovoItem, int valorItemDesejado) {
-    	No novoItem = new No(valorNovoItem);
-    	No itemDesejado = this.localizaItemPorValor(valorItemDesejado);
-    	No aux = itemDesejado.proximo;
-    	
-    	itemDesejado.proximo = novoItem;
-    	novoItem.proximo = aux;
-    	
-    	int auxValor = itemDesejado.info;
-    	itemDesejado.info = novoItem.info;
-    	novoItem.info = auxValor;
-    }
 
     private boolean itemEstaNoMeio(No item) {
         return item != null && this.inicio != item && this.fim != item;
