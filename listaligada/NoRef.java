@@ -77,10 +77,10 @@ public class NoRef {
         }
     }
 
-    private No localizaItemPorValor(int valor) {
+    private No localizaItemPorInfo(int info) {
     	No aux = this.inicio;
     	while (aux != null) {
-    		if (aux.info == valor) {
+    		if (aux.info == info) {
     			return aux;
     		}
     		aux = aux.proximo;
@@ -90,7 +90,7 @@ public class NoRef {
 
     public void insereItemDepoisDoValor(int valorNovoItem, int valorItemDesejado) {
     	No novoItem = new No(valorNovoItem);
-    	No itemDesejado = this.localizaItemPorValor(valorItemDesejado);
+    	No itemDesejado = this.localizaItemPorInfo(valorItemDesejado);
     	No aux = itemDesejado.proximo;
     	
     	itemDesejado.proximo = novoItem;
@@ -102,7 +102,7 @@ public class NoRef {
     }
 
     public void removeMeio(int info) {
-        No item = localizaItemPorValor(info);
+        No item = localizaItemPorInfo(info);
         if (itemEstaNoMeio(item)) {
             No proximoItem = item.proximo;
             item.info = proximoItem.info;
