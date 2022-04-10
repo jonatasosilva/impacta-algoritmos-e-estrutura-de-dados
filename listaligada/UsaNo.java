@@ -56,8 +56,8 @@ class UsaNo {
         System.out.println("2 - Remover item no início da lista");
         System.out.println("3 - Inserir item no final da lista");
         System.out.println("4 - Remover item no final da lista");
-        System.out.println("5 - Inserir item no meio da lista após item específico");
-        System.out.println("6 - Remover item no meio da lista após item específico");
+        System.out.println("5 - Inserir item no meio da lista");
+        System.out.println("6 - Remover item no meio da lista");
         System.out.println("7 - Imprimir lista");
         System.out.println("8 - Sair");
     }
