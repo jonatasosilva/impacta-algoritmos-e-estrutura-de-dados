@@ -45,7 +45,7 @@ class UsaNo {
                 case 8:
                     break;
             }
-        } while (resposta != 6);
+        } while (resposta != 8);
 
         scanner.close();
     }
