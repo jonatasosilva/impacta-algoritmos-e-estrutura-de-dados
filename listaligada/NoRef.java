@@ -88,12 +88,12 @@ public class NoRef {
     	return null;
     }
 
-    public void insereItemDepoisDoValor(int valorNovoItem, int valorItemDesejado) {
-    	No novoItem = new No(valorNovoItem);
-    	No itemDesejado = this.localizaItemPorInfo(valorItemDesejado);
-    	No aux = itemDesejado.proximo;
+    public void insereMeio(int infoNovoItem, int infoItemEspecifico) {
+    	No novoItem = new No(infoNovoItem);
+    	No infoItemEspecifico = this.localizaItemPorInfo(infoItemEspecifico);
+    	No aux = infoItemEspecifico.proximo;
     	
-    	itemDesejado.proximo = novoItem;
+    	infoItemEspecifico.proximo = novoItem;
     	novoItem.proximo = aux;
     }
 
