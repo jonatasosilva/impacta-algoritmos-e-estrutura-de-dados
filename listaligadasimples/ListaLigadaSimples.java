@@ -1,6 +1,6 @@
 package listaligadasimples;
 
-public class NoRef {
+public class ListaLigadaSimples {
 
     No inicio, fim;
 

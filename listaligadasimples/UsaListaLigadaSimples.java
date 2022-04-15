@@ -6,7 +6,7 @@ class UsaNo {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        NoRef ref = new NoRef();
+        ListaLigadaSimples lista = new ListaLigadaSimples();
 
         int resposta;
 
@@ -16,31 +16,31 @@ class UsaNo {
             switch (resposta) {
                 case 1:
                     System.out.println("Digite o valor do item: ");
-                    ref.insereInicio(scanner.nextInt());
+                    lista.insereInicio(scanner.nextInt());
                     break;
                 case 2:
-                    ref.removeInicio();
+                    lista.removeInicio();
                     break;
                 case 3:
                     System.out.println("Digite o valor do item: ");
-                    ref.insereFim(scanner.nextInt());
+                    lista.insereFim(scanner.nextInt());
                     break;
                 case 4:
-                    ref.removeFim();
+                    lista.removeFim();
                     break;
                 case 5:
                     System.out.println("Digite o valor do novo item: ");
                     int infoNovoItem = scanner.nextInt();
                     System.out.println("Digite o valor do item específico: ");
                     int infoItemEspecifico = scanner.nextInt();
-                    ref.insereMeio(infoNovoItem, infoItemEspecifico);
+                    lista.insereMeio(infoNovoItem, infoItemEspecifico);
                     break;
                 case 6:
                     System.out.println("Digite o valor do item: ");
-                    ref.removeMeio(scanner.nextInt());
+                    lista.removeMeio(scanner.nextInt());
                     break;
                 case 7:
-                    ref.imprime();
+                    lista.imprime();
                     break;
                 case 8:
                     break;
