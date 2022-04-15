@@ -1,4 +1,4 @@
-package listaligada;
+package listaligadasimples;
 
 public class NoRef {
 

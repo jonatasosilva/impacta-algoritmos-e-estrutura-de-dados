@@ -1,4 +1,4 @@
-package listaligada;
+package listaligadasimples;
 
 import java.util.Scanner;
 
